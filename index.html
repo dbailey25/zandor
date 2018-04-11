@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- links to external files -->
+  <!-- css-reset -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- css-custom -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bungee|Jomhuria|VT323" rel="stylesheet">
+<title>Zandor IV</title>
+</head>
+
+<body>
+<div id="launch-pad">
+
+</div>
+
+<div id="commDiv">
+    <div id="instructions">
+    The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.
+  </div>
+  <button id="replay">Play Again</button>
+  <div id="gameOver">Game Over</div>
+</div>
+
+<div id="controls">
+  <div id="scan-container">
+    <img id="scanner" src="assets/images/scanner.jpg">
+    <div id="crystalContainer">
+      <img name="crystalBtn" src="assets/images/blue-crystal.jpg" class="crystal" id="blue">
+      <img name="crystalBtn" src="assets/images/green-crystal.jpg" class="crystal" id="green">
+      <img name="crystalBtn" src="assets/images/pink-crystal.jpg" class="crystal" id="pink">
+      <img name="crystalBtn" src="assets/images/yellow-crystal.jpg" class="crystal" id="yellow">
+    </div>
+  </div>
+
+  <div id="empty">
+    <div class="emptyDiv">
+      FUEL LEVEL
+    </div>
+  </div>
+
+  <div class="gauge">
+    <div class="fuelDiv">
+      <img src="assets/images/fuel.jpg" class="fuelImg">
+      <div class="fuelStatus">
+        CURRENT <p id="current">0</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gauge">
+    <div class="fuelDiv">
+      <img src="assets/images/fuel.jpg" class="fuelImg">
+      <div class="fuelStatus">
+        TARGET <p id="target">0</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- display wins-losses -->
+<div id="bottom-bar">
+  <div id="win-loss">
+    <div id="win" class="text">
+      Wins:
+      <div id="win-count" class="text">
+        0
+      </div>
+    </div>
+
+    <div id="loss" class="text">
+      Losses:
+      <div id="loss-count" class="text">
+        0
+      </div>
+    </div>
+
+    <div id="level" class="text">
+      Level:
+      <div id="levelNumber" class="text">
+        0
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
